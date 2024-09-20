@@ -68,7 +68,7 @@ p {
 }
 
 /* Experience, Projects, and Contact Section */
-#experience, #projects, #contact {
+#projects, #contact {
     background-color: #f9f9f9;
     border-top: 1px solid #e0e0e0;
 }
@@ -134,12 +134,12 @@ p {
     font-weight: bold;
     letter-spacing: 3px;
     font-size: 3em;
-    color: #14dacc; /* Brown */
-    background-color: #d9d2bb; /* Beige */
+    color: #089f95; /* Brown */
+    background-color: #f7f6f1; /* Beige */
     padding: 70px 150px;
     border-radius: 11px;
     box-shadow: 20px 20px #83af9b; /* Light Blue */
-    font-family: "Baloo 2", cursive;
+    font-family: 'Georgia', serif;
     
     
 }
@@ -188,8 +188,9 @@ p {
 .uw-link {
     text-decoration: none;    /* Remove underline */
     font-weight: bold;        /* Make the text bold */
-    color: rgb(2, 199, 249);            /* Purple text */
+    color: rgb(93, 2, 249);            /* Purple text */
     text-transform: uppercase; /* Uppercase by default */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 /* Style for the word "of" */
@@ -306,6 +307,7 @@ body.loaded #loader {
 /* Styling the paragraph in the about-right */
 .about-right p {
     margin: 0;
+    text-align:center
 }
 
 /* Underline the words */
@@ -313,6 +315,7 @@ body.loaded #loader {
     text-decoration: underline;
     font-weight: bold;
     font-family: 'Courier New', monospace; /* Change font style */
+    text-align: justify;
 }
 /* Scroll to Top Button */
 #scrollToTopBtn {
@@ -333,4 +336,371 @@ body.loaded #loader {
 #scrollToTopBtn:hover {
     background-color: #555; /* Change button color on hover */
 }
+/* Style the introduction paragraph */
+.intro {
+    text-align: justify;
+    margin-bottom: 50px; /* Leave space for the resume link */
+}
+
+/* Style the Resume link */
+.resume {
+    text-decoration: none; 
+    font-weight: bold;
+    background-color: #ff0303;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    right: 10;
+}
+
+.resume:hover {
+    background-color: #555; 
+}
+
+/* Experience Section Styling */
+#experience {
+    background: url('white-outline-geometric-hexagonal-bipyramid-background-vector_53876-176699.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Flexbox to Align Content */
+.experience-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+.role-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.timeline {
+    font-size: 18px;
+    margin-top: 5px;
+    color: white;
+    color: #f0a500;
+    font-family:sans-serif;
+}
+.project-subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f0a500; /* Matches the accent color */
+}
+/* Accenture Logo on Left */
+.accenture-left {
+    flex: 0 0 30%;
+    text-align: center;
+}
+
+.accenture-logo {
+    width: 370px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.accenture-title {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Professional Write-up on Right */
+.accenture-right {
+    flex: 0 0 65%;
+    text-align: justify;
+}
+
+.project-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    padding-left: 20px;
+    padding-right: 20px; /* Add padding on the right to balance the layout */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify; /* Justify the text */
+}
+
+/* Experience Header */
+h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+h4{
+    color: #f0a500;
+}
+.skill-button {
+    background-color: black;
+    color: white;
+    border: none;
+    margin: 0 10px;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    transition: transform 0.3s ease;
+}
+
+.skills-container::-webkit-scrollbar {
+    display: none;
+}
+.skill-button:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Ensure section is contained within the page */
+.skills-section {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+    overflow: hidden; /* Ensure the section does not overflow the page */
+    max-width: 100%;
+    
+}
+/* Basic styling for the navigation bar */
+nav {
+    position: fixed; /* Keeps the navbar at the top of the page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000; /* Dark background for visibility */
+    padding: 10px;
+    z-index: 1000; /* Ensures it stays on top of other content */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px; /* Space between items */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #555; /* Highlight on hover */
+    border-radius: 4px;
+}
+.scroll-to-top {
+    position: absolute; /* Allows precise positioning */
+    top: 10px; /* Distance from the top */
+    left: 10px; /* Distance from the left */
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #777; /* Darken background on hover */
+}
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Adjust based on your preference */
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #f0f0f0; /* Background color for the carousel */
+    padding: 20px;
+    z-index: 1;
+}
+
+/* Carousel Buttons */
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.carousel-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+    background-color: #555;
+}
+
+/* Carousel Slides */
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+.carousel-slide {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+/* Project Image */
+.project-image {
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Project Description */
+.project-description {
+    width: 50%;
+    text-align: justify;
+}
+
+/* Hide all slides except the active one */
+.carousel-slide {
+    flex: 0 0 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Show active slide */
+.carousel-slide.active {
+    opacity: 1;
+}
+.projects-background {
+    background: url('pngtree-white-marble-texture-background-image_540744.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send background behind the content */
+    opacity: 0.7; /* Optional: Add transparency for better readability */
+}
+#experience h2 {
+    color: rgb(253, 253, 253); /* Change the heading color to black */
+    font-size: 36px; /* You can adjust the size as needed */
+    margin-bottom: 40px;
+    
+}
+.github-link {
+    color: black; /* Link color */
+    text-decoration: underline; /* Underline the text */
+    font-size: 20px; /* Adjust font size */
+    margin-top: 10px; /* Space between description and link */
+    display: block; /* Make the link a block element so it appears below the description */
+}
+
+.github-link:hover {
+    color: #f0a500; /* Change color on hover */
+}
+/* Styling for the contact section */
+/* Full-Width Contact Section */
+/* Full-Width Contact Section */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background: url('pexels-photo-5421107.jpeg') no-repeat center center/cover;
+    color: white;
+    width: 100%; /* Fully extends to 100% of the page */
+}
+
+/* Section Heading */
+#contact h2 {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Keeps the content from becoming too wide */
+}
+
+/* Contact Left Section */
+.contact-left {
+    width: 40%;
+}
+
+.contact-left h3 {
+    font-size: 28px;
+    color: #f0a500;
+    margin-bottom: 20px;
+}
+
+/* Contact Right Section */
+.contact-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Contact Information Items */
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    margin-left: 10px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Contact Icons (Phone) */
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Social Links (GitHub, LinkedIn) */
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
 

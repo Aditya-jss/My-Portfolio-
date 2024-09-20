@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="top"></div>
     <div id="loader">
         <div class="square-loader"></div>
     </div>
@@ -22,13 +23,15 @@
         <p class="animated-name">Hi, I'm Aditya</p>
         <!-- <img src="IMG_8443.jpeg" class="profile-pic" alt="Aditya's Profile Picture"> -->
         <p class="graduate-line">Graduate Student at <a href="https://www.washington.edu/" target="_blank" class="uw-link">UNIVERSITY <span class="small-italic">of&nbsp;</span> WASHINGTON</a></p>
-        <a class="view-work-btn" href="#experience">Learn More</a>
+        <a class="view-work-btn" href="#about">Learn More</a>
     </div>
 </section>
     <!-- Navigation Bar -->
     <header>
         <nav>
             <ul>
+                <li><a class="scroll-to-top" href="#top">A.</a></li>
+
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -51,6 +54,7 @@
                 <p><span class="underline">Hello, I'm Aditya</span>, a graduate student at the University of Washington, pursuing my passion for software development and technology innovation. </p>
                 <p><span class="underline">Hands-on experience</span> in Java, Spring Boot, MySQL, and more, I’m eager to contribute my skills in a professional setting.</p>
                 <p><span class="underline">Committed to learning</span>, I’m always exploring new opportunities in engineering and software development.</p>
+                <a href="Aditya.Jayanti - Resume.pdf" target="_blank" class="resume">Resume</a>
             </div>
         </div>
     </section>
@@ -62,84 +66,148 @@
     <section id="experience" class="section">
         <h2>Experience</h2>
     
-        <!-- Accenture Experience -->
-        <div class="experience-item">
-            <h3>Accenture</h3>
-            <p><strong>Advanced Application Engineering Analyst</strong> <br>
-            India, November 2022 - October 2023</p>
-    
-            <!-- Project 1: Application Discovery Suite -->
-            <div class="project">
-                <h4>Application Discovery Suite</h4>
-                <ul>
-                    <li>Technologies: Java, Spring Boot, JDBC, MySQL, AWS, HTML, CSS, ReactJS, Angular.</li>
-                    <li>Designed and implemented key functionalities by creating Controller and Service classes using Spring Boot, Java, and Restful web services.</li>
-                    <li>Integrated Spring Framework with Hibernate to streamline data access operations, improving query performance and reducing database overhead.</li>
-                    <li>Successfully integrated external Payment Gateway APIs, expanding the application's capabilities to process various payment methods.</li>
-                    <li>Increased the unit test coverage from 30% to 70% using JUnit and Mockito to improve code quality and early bug detection.</li>
-                    <li>Optimized key services, reducing response times and improving throughput for critical application operations.</li>
-                </ul>
+        <!-- Accenture Section with Background and Logo -->
+        <div class="experience-content">
+            <!-- Accenture Logo -->
+            <div class="accenture-left">
+                <img src="Accenture-Emblem.png" alt="Accenture Logo" class="accenture-logo">
+                <p class="accenture-title">Accenture</p>
+                <p class="role-title">Advanced Application Analyst</p>
+            <p class="timeline"><u>2022-2023</u></p>
             </div>
     
-            <!-- Project 2: Inventory Management System -->
-            <div class="project">
+            <!-- Professional Write-up -->
+            <div class="accenture-right">
+                <h3 class="project-subtitle">Key Projects</h3> <!-- Added project subtitle -->
+                <h4>Application Discovery Suite</h4>
+                <p class="project-description">
+                    
+
+                    I worked on the Application Discovery Suite project at Accenture, focusing on backend development using Java, Spring Boot, and MySQL. 
+                    I implemented key features by designing and developing Controller and Service classes in Spring Boot. This project involved integrating Spring 
+                    Framework with Hibernate to enhance data access efficiency, significantly improving query performance and reducing database overhead.
+                </p>
+                
                 <h4>Inventory Management System</h4>
-                <ul>
-                    <li>Technologies: HTML, CSS, Python, JavaScript, ReactJS, Node.js, MySQL, Microsoft Azure.</li>
-                    <li>Designed and implemented a responsive user interface using HTML, CSS, and JavaScript, enhancing the seller experience.</li>
-                    <li>Developed a robust backend with Node.js and Express, creating RESTful APIs to streamline CRUD operations for managing product data.</li>
-                    <li>Led the design and optimization of the MySQL database schema, resulting in a 15% reduction in query response times.</li>
-                    <li>Utilized Microsoft Azure for application hosting, ensuring high availability and scalability to meet growing user demand.</li>
-                </ul>
+                <p class="project-description">
+                    In the Inventory Management System project, I spearheaded the design and development of a responsive user interface using HTML, CSS, and JavaScript. 
+                    The result was an enhanced experience for sellers interacting with the platform.
+                </p>
+                
+                <!-- Skills Section -->
+                <div class="skills-section">
+                    <div class="skills-container">
+                        <button class="skill-button">Java</button>
+                        <button class="skill-button">Python</button>
+                        <button class="skill-button">MySQL</button>
+                        <button class="skill-button">JavaScript</button>
+                        <button class="skill-button">HTML</button>
+                        <button class="skill-button">CSS</button>
+                        <button class="skill-button">Bootstrap</button>
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    
+
 
     <!-- Projects Section -->
     <section id="projects" class="section">
         <h2>Projects</h2>
+        <div class="projects-background"></div>
+        <!-- Carousel Container -->
+        <div class="carousel-container">
+            <!-- Carousel Buttons -->
+            <div class="carousel-buttons">
+                <button class="carousel-button" data-slide="0">Hospital Management System</button>
+                <button class="carousel-button" data-slide="1">E-Commerce</button>
+                <button class="carousel-button" data-slide="2">Student Directory</button>
+            </div>
     
-        <!-- Project 1: Hospital Management System -->
-        <div class="project">
-            <h4>Hospital Management System</h4>
-            <ul>
-                <li>Technologies: Java, Spring Boot, JDBC, MySQL, AWS, HTML, CSS, JavaScript, NLP.</li>
-                <li>Developed a dynamic web application using Java, JSP, and MySQL, featuring a user-friendly interface for appointment management.</li>
-                <li>Implemented an AI chatbox utilizing natural language processing to streamline appointment scheduling, enhancing user experience and operational efficiency.</li>
-            </ul>
-        </div>
-    
-        <!-- Project 2: E-Commerce Website -->
-        <div class="project">
-            <h4>E-Commerce Website</h4>
-            <ul>
-                <li>Technologies: HTML, CSS, Java, JavaScript, ReactJS, Flask, MySQL.</li>
-                <li>Built a fully functional e-commerce platform with React.js for dynamic product listings, shopping cart, user authentication, and order management.</li>
-                <li>Integrated Razor Pay Payment Gateway for secure and seamless transactions.</li>
-            </ul>
-        </div>
-    
-        <!-- Project 3: Student Directory -->
-        <div class="project">
-            <h4>Student Directory</h4>
-            <ul>
-                <li>Technologies: Java, Spring Boot, JDBC, MySQL, AWS, HTML, CSS, JavaScript.</li>
-                <li>Developed a web application to manage a student directory, capturing student information, including mobile numbers and country-specific data.</li>
-                <li>Implemented advanced search functionalities for finding housing options and facilitating room-sharing arrangements for students in international locations.</li>
-            </ul>
+            <!-- Carousel Slides -->
+            <div class="carousel-slides">
+                <!-- Slide 1 -->
+                <div class="carousel-slide">
+                    <img src="Screenshot (13).png" alt="Project 1" class="project-image">
+                    <div class="project-description">
+                        <h3>Hospital Management System</h3>
+                        <p>A dynamic web application using Java, JSP, and MySQL for appointment management. The system features an AI-driven chatbox utilizing natural language processing, allowing users to easily schedule appointments by typing requests. This significantly enhanced user experience and operational efficiency.</p>
+                        <a href="https://github.com/Aditya-jss/Hospital_System" target="_blank" class="github-link">GitHub</a>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                    <img src="Screenshot (12).png" alt="Project 2" class="project-image">
+                    <div class="project-description">
+                        <h3>E-Commerce</h3>
+                        <p>A fully functional e-commerce platform using HTML, CSS, JavaScript, ReactJS, and Java. The platform includes features like product listings, shopping cart functionality, user authentication, and Razor Pay Payment Gateway integration, ensuring a seamless shopping experience and secure transactions.</p>
+                        <a href="https://github.com/Aditya-jss/Online-Ecommerce" target="_blank" class="github-link">GitHub</a>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                    <img src="Screenshot (11).png" alt="Project 3" class="project-image">
+                    <div class="project-description">
+                        <h3>Student Directory</h3>
+                        <p>A comprehensive web application using Java, Spring Boot, and Hibernate to manage a student directory efficiently. The system captures and organizes student data, and includes advanced search functionalities for students to find housing and room-sharing options internationally.</p>
+                        <a href="https://github.com/Aditya-jss/Student-Directory" target="_blank" class="github-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
 
     <!-- Contact Section -->
     <section id="contact" class="section">
-        <h2>Contact</h2>
-        <p>+1 425-961-3320</p>
-        <p>jssaditya09@gmail.com</p>
-        <p>http://www.linkedin.com/in/aditya-jss</p>
-        <p> Aditya-jss--GitHub
-        </p>
+        <h2>Contact Me</h2>
+        
+        <div class="contact-container">
+            <div class="contact-left">
+                <h3>If you're interested in collaborating or have any questions, feel free to reach out!</h3>
+            </div>
+    
+            <div class="contact-right">
+                <div class="contact-info">
+                    <!-- Email -->
+                    <div class="contact-item">
+                        <p><u>jssaditya09@gmail.com</u></p>
+                    </div>
+    
+                    <!-- Phone Number -->
+                    <div class="contact-item">
+                       
+                        <p>+1 425 961 3320</p>
+                    </div>
+    
+                    <!-- GitHub and LinkedIn Icons (Horizontal) -->
+                    <div class="social-links">
+                        <!-- GitHub -->
+                        <a href="https://github.com/Aditya-jss" target="_blank">
+                            <img src="github-icon-2048x2048-823jqxdr.png" alt="GitHub" class="social-icon">
+                        </a>
+                        <a href=" https://www.instagram.com/j.aditya_9999" target="_blank"></a>
+                            <img src="insta.png" alt="LinkedIn"   alt=insta class="social-icon"> 
+                        </a>
+                       
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/aditya-jss/" target="_blank">
+                            <img src="3991775.png" alt="LinkedIn" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    
+    
+    
+    
+    
     <button id="scrollToTopBtn" title="Go to top"> Go To Top</button>
     <!-- JavaScript for smooth scrolling -->
     <script src="Aditya.js"></script>
