@@ -623,12 +623,19 @@ nav a:hover {
 /* Styling for the contact section */
 /* Full-Width Contact Section */
 /* Full-Width Contact Section */
+.section {
+    width: 100%; /* Ensure the section takes the full width */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
 #contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
-    background: url('pexels-photo-5421107.jpeg') no-repeat center center/cover;
+    padding: 20px; /* Reduced padding for a smaller size */
+    background: url('pexels-photo-5421107.jpeg') no-repeat center center;
+    background-size: cover; /* Ensure the image covers the section */
     color: white;
     width: 100%; /* Fully extends to 100% of the page */
 }
@@ -642,65 +649,218 @@ nav a:hover {
 }
 
 /* Contact Container */
-.contact-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px; /* Keeps the content from becoming too wide */
-}
-
-/* Contact Left Section */
-.contact-left {
-    width: 40%;
-}
-
-.contact-left h3 {
-    font-size: 28px;
-    color: #f0a500;
-    margin-bottom: 20px;
-}
-
-/* Contact Right Section */
-.contact-right {
-    width: 50%;
+.container {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-}
-
-/* Contact Information Items */
-.contact-item {
-    display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    width: 100%; /* Ensure the container is full width */
+    max-width: 1200px; /* Optional: Set a max width for larger screens */
+    padding: 20px; /* Add padding */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
-.contact-item p {
-    margin-left: 10px;
-    font-size: 25px;
-    color: white;
+/* Top section for message and social links */
+.top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align to the start (left) */
+}
+
+/* Top left message */
+.top-left-message {
+    font-size: 22px;
     font-weight: bold;
 }
 
-/* Contact Icons (Phone) */
-.contact-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-
-/* Social Links (GitHub, LinkedIn) */
+/* Social links */
 .social-links {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    gap: 10px;
+    margin-top: 10px; /* Space between the message and social icons */
 }
 
+/* Icon styling */
 .social-icon {
     width: 40px;
     height: 40px;
-    margin-right: 20px;
-    cursor: pointer;
 }
 
+/* Centered contact form */
+.contact-form {
+    margin-top: 20px; /* Reduced space to keep it closer to the top section */
+    max-width: 600px;  /* Increased max width */
+    text-align: center;
+    width: 100%;
+}
 
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #e4ff13;
+}
+
+/* Grid layout for form fields */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 15px; /* Space between grid items */
+    margin-bottom: 15px; /* Space below the grid */
+}
+
+.form-grid input,
+.form-grid textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* Set background color to white */
+}
+
+/* Make the message textarea bigger */
+.form-grid textarea {
+    grid-column: span 2; /* Span across both columns */
+    height: 150px; /* Height for the message area */
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: linear-gradient(to right, #0e99b5, #00564a); /* Black to gray gradient */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+.contact-form button:hover {
+    background: linear-gradient(to right, #333, #777); /* Darker gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem; /* Use rem instead of px for scalability */
+    transition: color 0.3s ease;
+}
+
+/* Section Styling */
+.section {
+    padding: 100px 2%; /* Use percentage for padding */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Media Queries for Smaller Devices */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust margin for vertical stacking */
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    .about-container {
+        flex-direction: column; /* Stack the profile picture and text */
+    }
+
+    .profile-pic {
+        width: 80%; /* Responsive width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .about-right {
+        padding-left: 0; /* Remove padding on smaller screens */
+        font-size: 1rem; /* Adjust font size for readability */
+    }
+}
+
+/* Add more media queries as needed for other breakpoints */
+
+/* Carousel */
+.carousel-container {
+    width: 100%; /* Full width */
+    margin: 0 auto;
+}
+
+.carousel-slide {
+    flex: 1 0 100%; /* Allow slides to take full width */
+}
+
+/* Ensure all buttons and elements are sized responsively */
+.view-work-btn,
+.carousel-button {
+    width: auto; /* Allow buttons to resize */
+    padding: 10px 20px; /* Use responsive padding */
+    margin: 5px; /* Adjust margins */
+}
+
+/* Additional media query for very small devices */
+@media (max-width: 480px) {
+    .animated-name {
+        font-size: 2.5em; /* Decrease font size for smaller screens */
+        padding: 40px 20px; /* Reduce padding */
+    }
+
+    .graduate-line,
+    .view-work-btn {
+        font-size: 1.2em; /* Adjust font sizes */
+    }
+}

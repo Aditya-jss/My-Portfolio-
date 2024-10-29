@@ -85,3 +85,33 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Gather form data
+    const name = document.getElementById("name").value;
+    const contact = document.getElementById("contact").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    // Send data to PHP via fetch
+    fetch("json.php", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            name: name,
+            contact: contact,
+            email: email,
+            message: message
+        }),
+    })
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("formStatus").textContent = "Message sent successfully!";
+    })
+    .catch(error => {
+        document.getElementById("formStatus").textContent = "Failed to send message.";
+    });
+});

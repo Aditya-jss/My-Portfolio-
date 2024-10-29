@@ -163,46 +163,52 @@
     
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        
-        <div class="contact-container">
-            <div class="contact-left">
-                <h3>If you're interested in collaborating or have any questions, feel free to reach out!</h3>
-            </div>
+<section id="contact" class="section">
+    <h2>Contact Me</h2>
     
-            <div class="contact-right">
-                <div class="contact-info">
-                    <!-- Email -->
-                    <div class="contact-item">
-                        <p><u>jssaditya09@gmail.com</u></p>
-                    </div>
-    
-                    <!-- Phone Number -->
-                    <div class="contact-item">
-                       
-                        <p>+1 425 961 3320</p>
-                    </div>
-    
-                    <!-- GitHub and LinkedIn Icons (Horizontal) -->
-                    <div class="social-links">
-                        <!-- GitHub -->
-                        <a href="https://github.com/Aditya-jss" target="_blank">
-                            <img src="github-icon-2048x2048-823jqxdr.png" alt="GitHub" class="social-icon">
-                        </a>
-                        <a href="https://www.instagram.com/j.aditya_9999/" target="_blank"></a>
-                            <img src="insta.png"  alt=insta class="social-icon"> 
-                        </a>
-                       
-                        <!-- LinkedIn -->
-                        <a href="https://www.linkedin.com/in/aditya-jss/" target="_blank">
-                            <img src="3991775.png" alt="LinkedIn" class="social-icon">
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <div class="container">
+        <!-- Top Left Message -->
+        <div class="top-left-message">
+            <p>If you have questions, feel free to reach out!</p>
         </div>
-    </section>
+    
+        <!-- Social Links (Top Right) -->
+        <div class="social-links">
+            <a href="https://github.com/Aditya-jss" target="_blank">
+                <img src="github-icon-2048x2048-823jqxdr.png" alt="GitHub" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/j.aditya_9999/" target="_blank">
+                <img src="insta.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/aditya-jss/" target="_blank">
+                <img src="3991775.png" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="mailto:jssaditya09@gmail.com">
+                <img src="Gmail_Logo_512px.png" alt="Email" class="social-icon">
+            </a>
+        </div>
+    
+        <!-- Contact Form (Center) -->
+        <div class="contact-form">
+            <h3>Send Message</h3>
+            <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                <div class="form-grid">
+                    <input type="hidden" name="access_key" value="d4ae9ebf-4cb8-4327-a826-0e5006f744a8">
+
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="text" id="subject" name="subject" placeholder="Contact Number" required>
+                    <input type="text" id="subject" name="Contact Number" placeholder="Subject" required>
+                    <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="formStatus"></p>
+        </div>
+    </div>
+</section>
+
+
     
     
     
